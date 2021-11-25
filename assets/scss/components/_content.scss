@@ -11,9 +11,11 @@
   }
   strong {
     font-width: bold;
+    color: $primary;
   }
   em {
     font-style: italic;
+    color: $secondary;
   }
   p {
     font-family: $font-family-base;
