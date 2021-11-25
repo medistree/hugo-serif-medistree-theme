@@ -1,4 +1,14 @@
 a {
+  font-width: bold;
+  color: $primary;
+}
+strong {
+  font-width: bold;
+  color: $secondary;
+}
+em {
+  font-width: bold;
+  font-style: normal;
   color: $primary;
 }
 p {
