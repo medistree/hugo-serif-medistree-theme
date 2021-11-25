@@ -1,13 +1,17 @@
 // Colors
-$primary: {{ .Site.Params.colors.primary | default "#f24088" }};
-$black: {{ .Site.Params.colors.black | default "#2f2f41" }};
-$white: {{ .Site.Params.colors.white | default "#ffffff" }};
-$white-offset: {{ .Site.Params.colors.white_offset | default "#f6f7ff" }};
+$primary: {{ .Site.Params.colors.primary | default "#458183" }};
+$secondary: {{ .Site.Params.colors.secondary | default "#bf616a" }};
+$black: {{ .Site.Params.colors.black | default "#2e3440" }};
+$white: {{ .Site.Params.colors.white | default "#f1f3f7" }};
+$white-bright: {{ .Site.Params.colors.white_bright | default "#f6f7fa" }};
+$white-offset: {{ .Site.Params.colors.white_offset | default "#eceff4" }};
 $grey: {{ .Site.Params.colors.grey | default "#5C5A5A" }};
+$steel: {{ .Site.Params.colors.steel | default "#5b4252" }};
 
 // Fonts
-$font-family-base: {{ .Site.Params.fonts.base }}, Helvetica, Arial, sans-serif, -apple-system;
-$font-family-heading: {{ .Site.Params.fonts.heading }}, serif, -apple-system;
+// Google fonts are added in `layouts/partials/google-fonts.html`
+$font-family-base: {{ .Site.Params.fonts.base }}, Arial, sans-serif, -apple-system;
+$font-family-heading: {{ .Site.Params.fonts.heading }}, sans-serif, -apple-system;
 
 // Links
 $link-color: $primary;
