@@ -1,15 +1,16 @@
 // Colors
 $primary: #458183;
-$secondary: #f88379;
-$black: #2f2f41;
-$white: #ffffff;
-$white-offset: #f6f7ff;
-$steel: #5C5A5A;
+$secondary: #bf616a;
+$black: #2e3440;
+$white: #f1f3f7;
+$white-bright: #f6f7fa;
+$white-offset: #eceff4;
+$steel: #5b4252;
 
 // Fonts
 // Google fonts are added in `layouts/partials/google-fonts.html`
-$font-family-base: Helvetica, Arial, sans-serif, -apple-system;
-$font-family-heading: 'Playfair Display', serif, -apple-system;
+$font-family-base: Nunito, Arial, sans-serif, -apple-system;
+$font-family-heading: 'Maven Pro', sans-serif, -apple-system;
 
 // Links
 $link-color: $primary;
