@@ -1,0 +1,17 @@
+<div class="team team-summary team-summary-large">
+  {{ if .Params.image }}
+  <div class="team-image">
+    <img width="360" height="360" alt="Photo of {{ .Title }}" class="img-fluid mb-2" src="{{ .Params.image | relURL }}" />
+  </div>
+  {{ end }}
+  <div class="team-meta">
+    <h2 class="service-title">
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </h2>
+  </div>
+  <div class="team-content"> {{ .Content | plainify | htmlUnescape | truncate 120 "…" }} </div>
+  <div class="call-box-bottom">
+    <br>
+    <a href="{{ .Permalink }}" class="button">{{ .Params.pricing }}</a>
+  </div>
+</div>
