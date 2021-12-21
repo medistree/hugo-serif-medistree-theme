@@ -1,35 +1,25 @@
-<!DOCTYPE html>
-<html>
+{{ define "body_classes" }}page-home{{ end }}
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Page Not Found</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link href='/css/style.min.css' rel='stylesheet' />
-
-</head>
-
-<body>
-  <div id="wrapper" class="wrapper">
-
-    <div class="container pt-9 pb-9 pt-md-13 pb-md-13">
-      <div class="row justify-content-center align-content-between">
-        <div class="col-9 text-center">
-          <h1 class="display-1 text-primary mb-4">Page not found</h1>
-        </div>
-        <div class="col-9 text-center mb-2">
-          <a href="/" class="btn btn-primary">Home</a>
-        </div>
-        <div class="col-9 text-center mb-2">
-          <a href="/contact" class="btn btn-primary">Contact Us</a>
-        </div>
+{{ define "main" }}
+<div class="intro">
+  <div class="container">
+    <div class="row justify-content-start">
+      <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
+        {{ .Content }}
+        {{ if .Site.Params.homepage.show_contact_box }}
+          {{ partial "call.html" (dict "site" .Site "context" . "show_button" "true") }}
+        {{ end }}
       </div>
+      {{ if .Params.intro_image }}
+      <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
+        <img alt={{ .Title }} class="intro-image{{ if .Params.intro_image_absolute }} intro-image-absolute{{ end }}{{ if .Params.intro_image_hide_on_mobile }} intro-image-hide-mobile{{ end }}" src="{{ .Params.intro_image | relURL }}" />
+      </div>
+      {{ end }}
     </div>
-
   </div>
-</body>
+</div>
 
-</html>
+{{ end }}
+
+{{ define "footer_js" }}
+{{ end }}
