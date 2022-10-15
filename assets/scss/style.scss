@@ -1,12 +1,12 @@
 // Colors
-$primary: {{ .Site.Params.colors.primary | default "#458183" }};
-$secondary: {{ .Site.Params.colors.secondary | default "#bf616a" }};
-$black: {{ .Site.Params.colors.black | default "#2e3440" }};
-$white: {{ .Site.Params.colors.white | default "#f1f3f7" }};
-$white-bright: {{ .Site.Params.colors.white_bright | default "#f6f7fa" }};
-$white-offset: {{ .Site.Params.colors.white_offset | default "#eceff4" }};
-$grey: {{ .Site.Params.colors.grey | default "#5C5A5A" }};
-$steel: {{ .Site.Params.colors.steel | default "#5b4252" }};
+$primary: #458183;
+$secondary: #bf616a;
+$black: #2e3440;
+$white: #f1f3f7;
+$white-bright: #f6f7fa;
+$white-offset: #eceff4;
+$steel: #5b4252;
+$grey: #5b4252;
 
 // Fonts
 // Google fonts are added in `layouts/partials/google-fonts.html`
