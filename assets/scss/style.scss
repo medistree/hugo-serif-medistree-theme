@@ -10,8 +10,8 @@ $grey: #5b4252;
 
 // Fonts
 // Google fonts are added in `layouts/partials/google-fonts.html`
-$font-family-base: {{ .Site.Params.fonts.base }}, Arial, sans-serif, -apple-system;
-$font-family-heading: {{ .Site.Params.fonts.heading }}, sans-serif, -apple-system;
+$font-family-base: {{ .Site.Params.fonts.base }}, Nunito, Arial, sans-serif, -apple-system;
+$font-family-heading: {{ .Site.Params.fonts.heading }}, 'Maven Pro', sans-serif, -apple-system;
 
 // Links
 $link-color: $primary;
